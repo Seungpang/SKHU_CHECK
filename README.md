@@ -2,7 +2,7 @@
 + [SkhuCheck이전 AriCheck작품 제안서](./document/LIKELION_Ari_Check_작품_설명서최종.pdf)
 
 ## 실행화면
-![1](./img/1.png)
+![1](./img/1.PNG)
 ![2](./img/2.png)
 ![3](./img/3.png)
 ![4](./img/4.png)

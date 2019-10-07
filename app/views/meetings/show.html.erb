@@ -1,0 +1,44 @@
+<div class="calendar-show mh700">
+  <div class="container">
+    <div class="row">
+      <div  class="col-3"></div>
+      <div  class="col-6">
+        <div class="align-center calendar-show-body">
+          <div>
+            <p class="calendar-show-title"><%= @meeting.name %></p>
+          </div>
+          <div>
+            <p>- <%= @meeting.club.club_name %> -</p>
+
+          </div>
+
+          <div class="calendar-show-day">
+            <p class="calendar-show-day-p"  align="left">시작일</p>
+            <p class="calendar-show-day-s"><%= @meeting.start_time %></p>
+          </div>
+          
+          <div class="calendar-show-day">
+            <p class="calendar-show-day-p"align="left">종료일</p>
+            <p class="calendar-show-day-s"> <%= @meeting.end_time %></p>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div>
+            <p style="font-weight: bold; font-size: 1.2rem; padding: 1rem;">내용</p>
+            <div class="calendar-show-box align-left"><%= @meeting.content %></div>
+          </div>
+          
+          <div class="align-center">
+            
+            <div class=""><%= link_to '목록', meetings_path ,{:class => "calendar-show-bttn-1"} %></div>
+            <% if @meeting.user_id == current_user.id  %>
+              <div class="calendar-show-bttn-2 align-center"><%= link_to '삭제', meeting_path, method: :delete, data: { confirm: '삭제하시겠습니까?'}%></div>
+            <% end %>
+          </div>
+        </div>   
+      </div>
+      <div  class="col-3"></div>
+    </div>
+  </div>
+</div>
+
+

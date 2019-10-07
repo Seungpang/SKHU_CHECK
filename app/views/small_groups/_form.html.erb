@@ -1,0 +1,40 @@
+
+<%= form_for(small_group) do |f| %>
+  <% if small_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(small_group.errors.count, "error") %> prohibited this small_group from being saved:</h2>
+
+      <ul>
+      <% small_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field small-groups-create-input">
+    <%= f.label :"모임명", {:class => "small-groups-create-p"} %>
+    <div><%= f.text_field :group_name, {:class => ""} %></div>
+  </div>
+  
+  <div class="field small-groups-create-input">
+    <%= f.label :"이미지", {:class => "small-groups-create-p"} %>
+    <div><%= f.file_field :img_url,  {:class => ""}%></div>
+  </div>
+  
+  <div class="field small-groups-create-input">
+    <%= f.label :"짧은 소개", {:class => "small-groups-create-p"} %>
+    <div><%= f.text_field :introduce, {:class => ""} %></div>
+  </div>
+  
+  <div class="field small-groups-create-input">
+    <%= f.label :"상세 내용", {:class => "small-groups-create-p"} %>
+    <div><%= f.text_area :content , {:class => ""}%></div>
+  </div>
+  
+  
+  
+  <div class="actions align-center">
+    
+    <%= f.submit :"소모임 만들기" %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+  <div class="mypage mt60 mb60">
+    <div class="container mt60 mb60">
+      <div class="row">
+        <% @users.each do |u| %>
+          <% if u.id == current_user.id %>
+            <div class="col-3"></div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                  <div class="mypage_body">
+                    <div class="mypagebox">
+                      <div class="align-center"><h1>My Page</h1></div>
+                      <!--프로필이미지?<br>-->
+                      <p class="mypage-p">이름 : <%= u.name %></p>
+                      <% unless Department.find(u.department_id) == nil%>
+                      <p class="mypage-p">학과 : <%= Department.find(u.department_id).department_name %></p>
+                      <% end %>
+                      <% if u.grade_id == '1' || u.grade_id == '2' || u.grade_id == '3' || u.grade_id == '4'%>
+                      <p class="mypage-p">학년 : <%= Grade.find_by_id(u.grade_id).grade_name %></p>
+                      <% end %>
+                      <p class="mypage-p">학번 : <%= u.email %></p>
+                      <p class="mypage-p">전화번호 : <%= u.phone_number %></p>
+                      <p class="mypage-p">메일 : <%= u.mail %></p>
+                      <a href = '/users/<%=u.id%>/edit' >
+                        <div class="mypage-edit align-center">수정</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+            </div>
+            <div class="col-3"></div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>  
+  </div>

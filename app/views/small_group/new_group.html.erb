@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class=col-2></div>
+    <div class="col-8">
+      <div class="new-smgroup-box">
+        <h2 class="new-smgroup-h2">소모임 만들기</h2>
+        <form action="/small_group/create_group/" method="post" enctype="multipart/form-data">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <p class="new-smgroup-p">모임 이름</p>
+          <input type="text" name="group_name" placeholder="모임 이름을 적어주세요.">
+          <p class="new-smgroup-p">소개</p>
+          <textarea type="text" name="introduce" placeholder="소개를 적어주세요."></textarea>
+          <p class="new-smgroup-p">이미지</p>
+          <input type="file" name="img" accept="image/*">
+          <input type="submit" name="user[submit]" value="완 료">
+        </form>
+      </div>
+    </div>
+    <div class=col-2></div>    
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.applicant-index-body{
+     background-color: #eee;   
+}
+
+.applicant-index-title{
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    font-weight: bold;
+}
+
+.applicant-index-title .p1{
+    font-size: 2rem;
+}
+
+.applicant-index-title .p2{
+    font-size: 1.5rem;
+}
+
+.applicant-index-img{
+    padding: 1.5rem 3.5rem 0rem 3.5rem;
+}
+
+.applicant-info{
+    font-size: 0.8rem;
+    color: #444;
+}
+.applicant-info span{
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.applicant-bttn{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px solid #87a8e8;
+    border-radius: 5px;
+    color: #4363a4;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+}
+
+.applicant-bttn:hover{
+    border: 2px solid #4363a4;
+    color: #4363a4;
+}

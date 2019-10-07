@@ -1,0 +1,32 @@
+.user-application-bttn-1{
+    margin: 0 1rem;
+	border: none;
+	outline: none;
+	height: 2.5rem;
+	background: url(/assets/index/banner_1.png);
+	font-size: 1.2rem;
+	border-radius: 5px;
+	font-weight: bold;
+	width: 40%;
+	padding: 0.35rem;
+	display: inline-block;
+}
+.user-application-bttn-1:hover{
+    color: #fff;
+}
+.user-application-bttn-2{
+    margin: 0 1rem;
+	border: none;
+	outline: none;
+	height: 2.5rem;
+	background: #ffaaaa;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	font-weight: bold;
+	width: 40%;
+	padding: 0.35rem;
+	display: inline-block;
+}
+.user-application-bttn-2:hover{
+    color: #fff;
+}

@@ -1,0 +1,83 @@
+.signup{
+	padding: 3rem 0 2rem 0;
+}
+
+/*signup box*/
+.signupbox{
+	/*height: 830px;*/
+	padding: 3rem;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+.signupbox h1{
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.signupbox-p{
+	/*font-size: 1rem;*/
+	font-weight: bold;
+	color: #000;
+}
+
+.signupbox input{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.signupbox input[type="text"], .signupbox input[type="email"]{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #333;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+.signupbox input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #333;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+.signupbox input[type="submit"]
+{
+	margin-top: 2rem;
+	border: none;
+	outline: none;
+	padding: 0.5rem 0;
+	background: url(/assets/index/banner_1.png);
+	counter-reset: #fff;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.signupbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	color: #fff;
+}
+
+.selc{
+    width: 100%;
+    /*height: 1rem;*/
+    margin: 0.3rem 0;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    color: #000;
+    border: 1px solid #4363a4;
+    border-radius: 5px;
+    display: block;
+    background: transparent;
+}

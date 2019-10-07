@@ -1,0 +1,31 @@
+<div class="calendar-index-body">
+  <div class="container">
+    <div>
+       <div class="calendar-index-title align-center"><p>슼쳌 달력</p></div>
+       <% if user_signed_in? %>
+           <% if current_user.authorization == '1' || current_user.authorization == '0' %>
+              <div class="align-right"><%= link_to '일정등록', new_meeting_path ,{:class => "calendar-index-new-btn" }%></div>
+           <% end %>
+        <%end%>  
+        
+          <%= month_calendar events: @meetings do |date, meetings| %>
+            <div class="calendar-index-day-body">
+              <p style="font-weight: bold; font-size: 1.2rem"><%= date.day %></p>
+              <% meetings.each do |meeting| %>
+                
+                  <ul>
+                      <% @clubs.each do |c| %>
+                        <% if meeting.club_id == c.id %>
+                          <a href="meetings/<%=meeting.id%>"><li class="calendar-index-li"><p class="overflow-hddn" style="height: 25px; width: 120px; font-weight: bold; color: #315293"><%= meeting.name %></p><p class="align-right overflow-hddn" style="padding-left: 1rem; color: #fbb50f; font-size: 0.8rem;">-<%=c.club_name%></p></li></a>
+                          <div class="dropdown-divider"></div>
+                        <%end%>
+                      <%end%>
+                  </ul>    
+                
+              <% end %>
+            </div>  
+          <% end %>
+        
+    </div>
+  </div>
+</div>

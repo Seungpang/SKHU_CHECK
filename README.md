@@ -1,6 +1,9 @@
 # SKHU 단체(소모임 & 동아리) 활성 웹 서비스
 + [SkhuCheck이전 AriCheck작품 제안서](./document/LIKELION_Ari_Check_작품_설명서최종.pdf)
 
+## DB구조
+![DB](./img/skhu_check.PNG)
+
 ## 실행화면
 ![1](./img/1.PNG)
 ![2](./img/2.png)
